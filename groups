@@ -1,3 +1,5 @@
-# UUID                                  	Group Name
-#
-89ddebefa7bbaa9435893c9ad81ecc7473ad1972	openstack/networking-fujitsu-distgit-ptl
+# UUID          Group Name
+False 	Non-Interactive Users
+e08b065497b73bc2ef11b1a7b7561ef2c4c66dec       	openstack/networking-fujitsu-distgit-core
+89ddebefa7bbaa9435893c9ad81ecc7473ad1972        	openstack/networking-fujitsu-distgit-ptl
+global:Registered-Users		Registered Users
