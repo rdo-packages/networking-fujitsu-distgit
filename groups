@@ -1,5 +1,9 @@
-# UUID                                  	Group Name
-#
-89ddebefa7bbaa9435893c9ad81ecc7473ad1972	openstack/networking-fujitsu-distgit-ptl
-e08b065497b73bc2ef11b1a7b7561ef2c4c66dec	openstack/networking-fujitsu-distgit-core
-global:Registered-Users                 	Registered Users
+# UUID Group Name
+global:Registered-Users	Registered Users
+4572c517702492251ad622a289176552a8acbbb2	rdo-superusers
+bede3e2b268e29115e1021031c6daa9222168ab2	openstack/networking-fujitsu-ptl
+global:Anonymous-Users	Anonymous Users
+27ec64d4afa2fe4747503ce64d910768ba1dedd2	openstack/networking-fujitsu-core
+05a678d3d4a168e149d5e8a0063bbd1b1c5526da	Administrators
+401cf37bee35d1c809d4d957e55f2a304f8eed69	rdo-provenpackagers
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73	Non-Interactive Users
