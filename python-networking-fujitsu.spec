@@ -13,7 +13,6 @@ BuildArch:      noarch
 
 BuildRequires:  python-hacking
 BuildRequires:  python-webtest
-BuildRequires:  python-coverage
 BuildRequires:  python-subunit
 BuildRequires:  python-sphinx
 BuildRequires:  python-oslo-sphinx
