@@ -11,6 +11,7 @@ URL:            https://pypi.python.org/pypi/%{plugin_name}
 Source0:        https://tarballs.openstack.org/%{plugin_name}/%{plugin_name}-%{upstream_version}.tar.gz
 BuildArch:      noarch
 
+BuildRequires:  git
 BuildRequires:  python-hacking
 BuildRequires:  python-webtest
 BuildRequires:  python-subunit
