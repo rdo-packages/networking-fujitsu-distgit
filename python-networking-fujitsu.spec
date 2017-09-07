@@ -2,6 +2,9 @@
 %global plugin_name networking-fujitsu
 %global src_name networking_fujitsu
 
+%global common_desc \
+This package contains Fujitsu neutron plugins
+
 Name:           python-%{plugin_name}
 Version:        2.0.0
 Release:        1%{?dist}
@@ -31,7 +34,7 @@ BuildRequires:  python-neutron-tests
 BuildRequires:  python-mock
 
 %description
-This package contains Fujitsu neutron plugins
+%{common_desc}
 
 %package -n python2-%{plugin_name}
 Summary:  neutron ML2 plugin for Fujitsu switch
@@ -50,7 +53,7 @@ Requires:       python-eventlet
 Requires:       python-httplib2
 
 %description -n python2-%{plugin_name}
-This package contains Fujitsu neutron plugins
+%{common_desc}
 
 %prep
 %autosetup -n %{plugin_name}-%{upstream_version} -S git
