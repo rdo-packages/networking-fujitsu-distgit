@@ -32,6 +32,7 @@ BuildRequires:  python-oslo-utils
 BuildRequires:  openstack-neutron
 BuildRequires:  python-neutron-tests
 BuildRequires:  python-mock
+BuildRequires:  openstack-macros
 
 %description
 %{common_desc}
@@ -57,7 +58,7 @@ Requires:       python-httplib2
 
 %prep
 %autosetup -n %{plugin_name}-%{upstream_version} -S git
-rm -rf {test-,}requirements.txt
+%py_req_cleanup
 
 %build
 %py2_build
