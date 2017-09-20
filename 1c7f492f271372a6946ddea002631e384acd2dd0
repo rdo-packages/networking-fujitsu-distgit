@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a961159_ccace438",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2017-09-20T13:07:38Z",
+      "side": 1,
+      "message": "... in the RDO Pike trunk (aka dlrn).\nCBS build is not required, it stays 4.1.2 release.",
+      "revId": "1c7f492f271372a6946ddea002631e384acd2dd0",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
