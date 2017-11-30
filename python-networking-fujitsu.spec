@@ -3,7 +3,7 @@
 %global src_name networking_fujitsu
 
 Name:           python-%{plugin_name}
-Version:        4.1.2
+Version:        5.0.1
 Release:        1%{?dist}
 Summary:        FUJITSU ML2 plugins/drivers for OpenStack Neutron
 License:        ASL 2.0
@@ -78,6 +78,9 @@ mv %{buildroot}/usr/etc/neutron/plugins/ml2/*.ini %{buildroot}%{_sysconfdir}/neu
 %config(noreplace) %attr(0640, root, neutron) %{_sysconfdir}/neutron/plugins/ml2/*.ini
 
 %changelog
+* Thu Nov 30 2017 Yasuyuki Kobayashi <kobayash.yasu@jp.fujitsu.com> 5.0.1-1
+- Update to 5.0.1
+
 * Wed Aug 30 2017 Haikel Guemar <hguemar@fedoraproject.org> 4.1.2-1
 - Update to 4.1.2
 
