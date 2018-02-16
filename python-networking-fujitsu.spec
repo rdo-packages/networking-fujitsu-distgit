@@ -6,8 +6,8 @@
 This package contains Fujitsu neutron plugins
 
 Name:           python-%{plugin_name}
-Version:        2.0.0
-Release:        1%{?dist}
+Version:        XXX
+Release:        XXX
 Summary:        FUJITSU ML2 plugins/drivers for OpenStack Neutron
 License:        ASL 2.0
 URL:            https://pypi.python.org/pypi/%{plugin_name}
@@ -15,23 +15,23 @@ Source0:        https://tarballs.openstack.org/%{plugin_name}/%{plugin_name}-%{u
 BuildArch:      noarch
 
 BuildRequires:  git
-BuildRequires:  python-hacking
-BuildRequires:  python-subunit
-BuildRequires:  python-sphinx
-BuildRequires:  python-oslo-sphinx
-BuildRequires:  python-oslotest
-BuildRequires:  python-testrepository
-BuildRequires:  python-testscenarios
-BuildRequires:  python-testtools
-BuildRequires:  python-reno
-BuildRequires:  python-testresources
+BuildRequires:  python2-hacking
+BuildRequires:  python2-subunit
+BuildRequires:  python2-sphinx
+BuildRequires:  python2-oslo-sphinx
+BuildRequires:  python2-oslotest
+BuildRequires:  python2-testrepository
+BuildRequires:  python2-testscenarios
+BuildRequires:  python2-testtools
+BuildRequires:  python2-reno
+BuildRequires:  python2-testresources
 BuildRequires:  python2-devel
-BuildRequires:  python-setuptools
-BuildRequires:  python-oslo-i18n
-BuildRequires:  python-oslo-utils
+BuildRequires:  python2-setuptools
+BuildRequires:  python2-oslo-i18n
+BuildRequires:  python2-oslo-utils
 BuildRequires:  openstack-neutron
 BuildRequires:  python-neutron-tests
-BuildRequires:  python-mock
+BuildRequires:  python2-mock
 BuildRequires:  openstack-macros
 
 %description
@@ -41,17 +41,15 @@ BuildRequires:  openstack-macros
 Summary:  neutron ML2 plugin for Fujitsu switch
 %{?python_provide:%python_provide python2-%{plugin_name}}
 
-Requires:       python-oslo-i18n >= 2.1.0
-Requires:       python-oslo-utils >= 3.16.0
-Requires:       python-oslo-log >= 3.11.0
-Requires:       python-pbr >= 1.8
-Requires:       python-babel >= 2.3.4
-Requires:       python-six
+Requires:       python2-oslo-i18n >= 3.15.3
+Requires:       python2-oslo-utils >= 3.33.0
+Requires:       python2-oslo-log >= 3.36.0
+Requires:       python2-pbr >= 1.8
+Requires:       python2-six
 Requires:       openstack-neutron-common
 Requires:       openstack-neutron-ml2
-Requires:       python-oslo-config
-Requires:       python-eventlet
-Requires:       python-httplib2
+Requires:       python2-oslo-config
+Requires:       python2-eventlet
 
 %description -n python2-%{plugin_name}
 %{common_desc}
