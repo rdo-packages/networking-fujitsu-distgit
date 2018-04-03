@@ -82,3 +82,4 @@ mv %{buildroot}/usr/etc/neutron/plugins/ml2/*.ini %{buildroot}%{_sysconfdir}/neu
 %changelog
  * Fri Dec 02 2016 Koki Sanagi<sanagi.koki@jp.fujitsu.com> - 2.0.0-1
  - Initial package.
+# REMOVEME: error caused by commit https://github.com/openstack/networking-fujitsu/commit/565bab52d3f161fdceb360466b8fe7a521f55131
