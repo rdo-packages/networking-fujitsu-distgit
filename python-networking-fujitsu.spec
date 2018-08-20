@@ -31,6 +31,7 @@ BuildRequires:  python2-oslo-i18n
 BuildRequires:  python2-oslo-utils
 BuildRequires:  openstack-neutron
 BuildRequires:  python-neutron-tests
+BuildRequires:  python2-neutron-lib-tests
 BuildRequires:  python2-mock
 BuildRequires:  openstack-macros
 
@@ -44,12 +45,14 @@ Summary:  neutron ML2 plugin for Fujitsu switch
 Requires:       python2-oslo-i18n >= 3.15.3
 Requires:       python2-oslo-utils >= 3.33.0
 Requires:       python2-oslo-log >= 3.36.0
-Requires:       python2-pbr >= 1.8
+Requires:       python2-pbr >= 2.0.0
 Requires:       python2-six
-Requires:       openstack-neutron-common
-Requires:       openstack-neutron-ml2
+Requires:       openstack-neutron-common >= 1:13.0.0
+Requires:       openstack-neutron-ml2 >= 1:13.0.0
 Requires:       python2-oslo-config
 Requires:       python2-eventlet
+Requires:       python2-neutron-lib >= 1.18.0
+Requires:       python2-paramiko >= 2.0.0
 
 %description -n python2-%{plugin_name}
 %{common_desc}
