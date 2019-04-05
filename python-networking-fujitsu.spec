@@ -19,8 +19,8 @@
 This package contains Fujitsu neutron plugins
 
 Name:           python-%{plugin_name}
-Version:        XXX
-Release:        XXX
+Version:        8.0.0
+Release:        1%{?dist}
 Summary:        FUJITSU ML2 plugins/drivers for OpenStack Neutron
 License:        ASL 2.0
 URL:            https://pypi.python.org/pypi/%{plugin_name}
@@ -98,5 +98,8 @@ stestr-%{pyver} run
 %config(noreplace) %attr(0640, root, neutron) %{_sysconfdir}/neutron/plugins/ml2/*.ini
 
 %changelog
+* Fri Apr 05 2019 RDO <dev@lists.rdoproject.org> 8.0.0-1
+- Update to 8.0.0
+
  * Fri Dec 02 2016 Koki Sanagi<sanagi.koki@jp.fujitsu.com> - 2.0.0-1
  - Initial package.
