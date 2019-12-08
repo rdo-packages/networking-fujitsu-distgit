@@ -77,8 +77,11 @@ Requires:       python%{pyver}-paramiko >= 2.0.0
 %build
 %{pyver_build}
 
+# oslosphinx do not work with sphinx > 2
+%if %{pyver} == 2
 sphinx-build-%{pyver} -W -b html doc/source html
 rm -rf html/.{doctrees,buildinfo}
+%endif
 
 %install
 %{pyver_install}
@@ -92,11 +95,11 @@ stestr-%{pyver} run
 %files -n python%{pyver}-%{plugin_name}
 %license LICENSE
 %doc README.rst
+%if %{pyver} == 2
 %doc html
+%endif
 %{pyver_sitelib}/%{src_name}
 %{pyver_sitelib}/*.egg-info
 %config(noreplace) %attr(0640, root, neutron) %{_sysconfdir}/neutron/plugins/ml2/*.ini
 
 %changelog
- * Fri Dec 02 2016 Koki Sanagi<sanagi.koki@jp.fujitsu.com> - 2.0.0-1
- - Initial package.
